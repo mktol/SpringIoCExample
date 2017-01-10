@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Message {
-    @Value("some text")
+    @Value("${name}")
     private String text;
-    @Value(value = "#{21}")
-    private Long id;
+//    @Value(value = "#{21}")
+    private static Long id;
 
     public String getText() {
         return text;
@@ -28,7 +28,7 @@ public class Message {
 
     @Override
     public String toString() {
-        return "com.example.Message{" +
+        return "Message{" +
                 "text='" + text + '\'' +
                 ", id=" + id +
                 '}';

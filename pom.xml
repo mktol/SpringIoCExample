@@ -11,6 +11,8 @@
     <modules>
         <module>DIExample</module>
         <module>SpringAnotationSample</module>
+        <module>SpringAOPSample</module>
+        <module>SptingTestExample</module>
     </modules>
 
 
