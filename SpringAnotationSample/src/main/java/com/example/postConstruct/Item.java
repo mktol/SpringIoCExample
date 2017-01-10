@@ -5,16 +5,17 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import java.util.Random;
 
 @Component
-//@Scope("prototype")
+@Scope("prototype")
 public class Item {
     private int age;
     private String name;
 
     @PostConstruct
     private void fillRows(){
-        age = 34;
+        age = 34+new Random().nextInt(10);
         name =  "Black Jack";
         System.out.println("-----Rows are initialized. ---");
     }

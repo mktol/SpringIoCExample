@@ -19,7 +19,8 @@ public class Main {
 
         Item item = (Item)ctx.getBean("item");
         System.out.println(item);
-
+        Item item1 = (Item) ctx.getBean("item");
+        System.out.println(item1);
         ctx.close();
 
 
